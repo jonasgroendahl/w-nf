@@ -1,0 +1,5 @@
+.seperator {
+  background: var(--teal);
+  width: 90px;
+  height: 12px;
+}

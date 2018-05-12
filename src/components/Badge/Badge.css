@@ -1,0 +1,43 @@
+.badge {
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  background: rgb(41, 235, 235);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.badge-container {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+}
+
+.badge-container h2 {
+  margin-bottom: 20px;
+}
+
+.badge-price {
+  margin: 0;
+}
+
+.badge-timespan {
+  font-size: 1.4rem;
+  line-height: 0.5;
+  margin: 2px;
+}
+
+.badge-bottom-text {
+  width: 200px;
+  margin-top: 10px;
+}

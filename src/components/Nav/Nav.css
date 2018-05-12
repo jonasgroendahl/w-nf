@@ -1,0 +1,62 @@
+.nav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.nav-subtitle {
+  color: white;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav {
+  height: 150px;
+  background: black;
+}
+
+.nav-content > * {
+  margin: 10px;
+  color: var(--teal);
+  font-size: 0.9rem;
+}
+
+/* no hover on first and last element */
+.nav-content > *:hover:not(:last-child):not(:first-child) {
+  border-bottom: 2px solid var(--teal);
+}
+
+.nav-content > *:first-child {
+  margin-right: auto;
+  border-bottom: none;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 50px;
+  border: 2.5px solid var(--teal);
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .nav-content > * {
+    display: none;
+  }
+  .nav-content > *:first-child {
+    display: block;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
