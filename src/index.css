@@ -1,5 +1,6 @@
 :root {
   --teal: rgb(164, 239, 218);
+  --b-teal: rgb(97, 227, 192);
 }
 
 body {
@@ -19,7 +20,7 @@ a {
   color: var(--teal);
   border: solid 1px var(--teal);
   border-radius: 10px;
-  padding: 10px 30px;
+  padding: 10px 50px;
   text-transform: uppercase;
   font-weight: 900;
   cursor: pointer;
@@ -32,6 +33,17 @@ a {
   background: var(--teal);
   color: white;
   outline: none;
+}
+
+.btn-teal {
+  background: var(--teal);
+  color: black;
+}
+
+.btn-teal:hover {
+  background: black;
+  color: var(--teal);
+  border: solid 1px black;
 }
 
 .input {
@@ -56,6 +68,12 @@ a {
 
 .block {
   width: 100%;
+}
+
+a.block {
+  display: flex;
+  justify-content: center;
+  width: 80%;
 }
 
 .f-container {

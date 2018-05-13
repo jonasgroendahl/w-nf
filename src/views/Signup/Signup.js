@@ -17,7 +17,9 @@ export default class Signup extends Component {
         <input type="text" className="input block" placeholder="Last Name" />
         <input type="email" className="input block" placeholder="Email" />
         <input type="password" className="input block" placeholder="Password" />
-        <button className="btn block">Sign up</button>
+        <Link className="btn block" to="/signedup">
+          Sign up
+        </Link>
         <p>
           Already have an account? <Link to="/login">Log in here.</Link>
         </p>

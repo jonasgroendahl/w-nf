@@ -5,10 +5,30 @@
   margin-right: auto;
 }
 
+.cl-subtitle {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 750;
+  margin-right: auto;
+  color: gray;
+}
+
 .cl-top-header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cl-top-header-2 {
+  display: flex;
+  align-items: center;
+}
+
+.cl-top-header-not-logged-in {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cl-top-header h1 {

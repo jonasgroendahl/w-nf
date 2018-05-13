@@ -16,7 +16,7 @@ export default class Nav extends Component {
             />
             <p className="nav-subtitle">ON DEMAND</p>
           </Link>
-          <Link to="/dashboard">Dashboard</Link>
+          <Link to="/">Dashboard</Link>
           <Link to="/classes">Classes</Link>
           <Link to="/plans">Transformation plans</Link>
           <UserConsumer>
@@ -32,7 +32,7 @@ export default class Nav extends Component {
                 </React.Fragment>
               ) : (
                 <React.Fragment>
-                  <Link to="/profile">Club Access</Link>
+                  <Link to="/access">Club Access</Link>
                   <Link className="btn" to="/login">
                     Log in
                   </Link>

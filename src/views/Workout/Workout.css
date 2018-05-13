@@ -1,0 +1,9 @@
+.workout-info {
+  display: flex;
+  width: 650px;
+  margin-top: 10px;
+}
+
+.workout-info svg {
+  margin: 0 3px;
+}
