@@ -16,29 +16,34 @@ export default class Nav extends Component {
             />
             <p className="nav-subtitle">ON DEMAND</p>
           </Link>
-          <Link to="/">Dashboard</Link>
-          <Link to="/classes">Classes</Link>
-          <Link to="/plans">Transformation plans</Link>
           <UserConsumer>
-            {context =>
-              context.email !== "" ? (
-                <React.Fragment>
-                  <Link to="/profile">Profile</Link>
-                  <img
-                    src="https://www.empressuniverse.com/images/themes/empress/profile-img.jpg"
-                    className="profile-pic"
-                    onClick={context.logOut}
-                  />
-                </React.Fragment>
-              ) : (
-                <React.Fragment>
-                  <Link to="/access">Club Access</Link>
-                  <Link className="btn" to="/login">
-                    Log in
-                  </Link>
-                </React.Fragment>
-              )
-            }
+            {context => (
+              <React.Fragment>
+                {context.email === "" ? (
+                  <React.Fragment>
+                    <Link to="/classes">Classes</Link>
+                    <Link to="/trainers">Trainers</Link>
+                    <Link to="/plans">Transformation plans</Link>
+                    <Link to="/access">Club Access</Link>
+                    <Link className="btn" to="/login">
+                      Log in
+                    </Link>
+                  </React.Fragment>
+                ) : (
+                  <React.Fragment>
+                    <Link to="/">Dashboard</Link>
+                    <Link to="/classes">Classes</Link>
+                    <Link to="/plans">Transformation plans</Link>
+                    <Link to="/profile">Profile</Link>
+                    <img
+                      src="https://www.empressuniverse.com/images/themes/empress/profile-img.jpg"
+                      className="profile-pic"
+                      onClick={context.logOut}
+                    />
+                  </React.Fragment>
+                )}
+              </React.Fragment>
+            )}
           </UserConsumer>
           <FaBars className="mobile-menu" />
         </div>

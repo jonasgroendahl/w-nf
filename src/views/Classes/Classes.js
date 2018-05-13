@@ -57,27 +57,27 @@ class Classes extends Component {
           <button className="btn">See all classes</button>
         </div>
         <Slider {...settings}>
-          <div onClick={() => this.props.history.push("/class/4")}>
+          <div className="slide-item">
             <img src="http://placekitten.com/g/400/200" />
             <p>Cycling Sky Villa Las Vegas Pro II</p>
-            <div>
+            <div onClick={() => this.props.history.push("/class/4")}>
               <IconFire style={svgSize} /> 44 <IconClock style={svgSize} />{" "}
               16:00
             </div>
           </div>
-          <div>
+          <div className="slide-item">
             <img src="http://placekitten.com/g/400/200" />
           </div>
-          <div>
+          <div className="slide-item">
             <img src="http://placekitten.com/g/400/200" />
           </div>
-          <div>
+          <div className="slide-item">
             <img src="http://placekitten.com/g/400/200" />
           </div>
-          <div>
+          <div className="slide-item">
             <img src="http://placekitten.com/g/400/200" />
           </div>
-          <div>
+          <div className="slide-item">
             <img src="http://placekitten.com/g/400/200" />
           </div>
         </Slider>
@@ -86,22 +86,22 @@ class Classes extends Component {
           <button className="btn">See all classes</button>
         </div>
         <Slider {...settings}>
-          <div>
+          <div className="slide-item">
             <img src="http://placekitten.com/g/400/200" />
           </div>
-          <div>
+          <div className="slide-item">
             <img src="http://placekitten.com/g/400/200" />
           </div>
-          <div>
+          <div className="slide-item">
             <img src="http://placekitten.com/g/400/200" />
           </div>
-          <div>
+          <div className="slide-item">
             <img src="http://placekitten.com/g/400/200" />
           </div>
-          <div>
+          <div className="slide-item">
             <img src="http://placekitten.com/g/400/200" />
           </div>
-          <div>
+          <div className="slide-item">
             <img src="http://placekitten.com/g/400/200" />
           </div>
         </Slider>

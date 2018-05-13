@@ -8,14 +8,12 @@ export default class Player extends Component {
         <div className="video-wrapper">
           <iframe
             src="https://player.vimeo.com/video/267790185"
-            autoplay
+            autoPlay
             preload="true"
             width="1920"
             height="1080"
-            frameborder="0"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen="true"
+            frameBorder="0"
+            allowFullScreen
           />
         </div>
       </div>

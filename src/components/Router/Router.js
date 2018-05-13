@@ -9,6 +9,7 @@ import Workout from "../../views/Workout/Workout";
 import Player from "../../views/Player/Player";
 import signedup from "../../views/SignedUp/SignedUp";
 import Profile from "../../views/Profile/Profile";
+import clubaccess from "../../views/ClubAccess/ClubAccess";
 
 const router = () => {
   return (
@@ -22,6 +23,7 @@ const router = () => {
       <Route path="/player" component={Player} />
       <Route path="/signedup" component={signedup} />
       <Route path="/profile" component={Profile} />
+      <Route path="/access" component={clubaccess} />
     </Switch>
   );
 };
