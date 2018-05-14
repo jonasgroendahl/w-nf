@@ -15,6 +15,10 @@ a {
   font-weight: 600;
 }
 
+.text--teal {
+  color: var(--teal);
+}
+
 .btn {
   background: transparent;
   color: var(--teal);

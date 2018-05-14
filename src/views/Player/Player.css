@@ -24,6 +24,16 @@
   height: 100%;
 }
 
+.video-spinner {
+  position: absolute;
+  top: 42%;
+  left: 48%;
+}
+
+.react-sweet-progress-symbol {
+  color: var(--teal) !important;
+}
+
 /* hack
 .video-wrapper {
     position: relative;

@@ -12,6 +12,18 @@ import IconArrowRight from "react-icons/lib/md/keyboard-arrow-right";
 import IconArrowLeft from "react-icons/lib/md/keyboard-arrow-left";
 
 export default class Home extends Component {
+  prev = () => {
+    this.slider.slickNext();
+  };
+
+  next = () => {
+    this.slider.slickPrev();
+  };
+
+  componentDidMount() {
+    console.log(this);
+  }
+
   render() {
     const settings = {
       dots: false,
@@ -41,7 +53,8 @@ export default class Home extends Component {
     const svgSize = {
       width: "40px",
       height: "40px",
-      color: "var(--teal)"
+      color: "var(--teal)",
+      cursor: "pointer"
     };
 
     return (
@@ -139,12 +152,18 @@ export default class Home extends Component {
                 <div className="home-bottom-loggedin">
                   <h1 className="sub-header mr-auto">Recent activity</h1>
                   <div>
-                    <IconArrowLeft style={svgSize} />
-                    <IconArrowRight style={svgSize} />
+                    <IconArrowLeft style={svgSize} onClick={this.prev} />
+                    <IconArrowRight style={svgSize} onClick={this.next} />
                   </div>
                 </div>
-                <div className="home-slider-bottom">
-                  <Slider {...settingsBottom}>
+                <div
+                  className="home-slider-bottom"
+                  style={{ marginBottom: "50px" }}
+                >
+                  <Slider
+                    ref={slider => (this.slider = slider)}
+                    {...settingsBottom}
+                  >
                     <div className="slide-item">
                       <img src="http://placekitten.com/g/400/200" />
                     </div>

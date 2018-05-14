@@ -10,6 +10,17 @@ import Seperator from "../../components/Seperator/Seperator";
 import { withRouter, Link } from "react-router-dom";
 
 class Classes extends Component {
+  state = {
+    showSearchBar: false
+  };
+
+  showSearchBar = () => {
+    const show = this.state.showSearchBar;
+    this.setState({
+      showSearchBar: !show
+    });
+  };
+
   render() {
     const settings = {
       dots: true,
@@ -31,7 +42,10 @@ class Classes extends Component {
             context.email != "" ? (
               <div className="cl-top-header">
                 <h1 className="cl-title">on demand classes</h1>
-                <FaSearch />
+                <FaSearch onClick={this.showSearchBar} />
+                {this.state.showSearchBar ? (
+                  <input type="text" className="search-bar" />
+                ) : null}
                 <FaStar />
                 <MdFilterList />
               </div>

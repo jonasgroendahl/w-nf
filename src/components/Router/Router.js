@@ -6,7 +6,7 @@ import Signup from "../../views/Signup/Signup";
 import Policy from "../../views/Policy/Policy";
 import Home from "../../views/Home/Home";
 import Workout from "../../views/Workout/Workout";
-import Player from "../../views/Player/Player";
+import WexerPlayer from "../../views/Player/Player";
 import signedup from "../../views/SignedUp/SignedUp";
 import Profile from "../../views/Profile/Profile";
 import clubaccess from "../../views/ClubAccess/ClubAccess";
@@ -20,7 +20,7 @@ const router = () => {
       <Route path="/signup" exact component={Signup} />
       <Route path="/policy" exact component={Policy} />
       <Route path="/class/:id" component={Workout} />
-      <Route path="/player" component={Player} />
+      <Route path="/player" component={WexerPlayer} />
       <Route path="/signedup" component={signedup} />
       <Route path="/profile" component={Profile} />
       <Route path="/access" component={clubaccess} />

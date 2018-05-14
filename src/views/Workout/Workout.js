@@ -31,20 +31,47 @@ class Workout extends Component {
                   Sign up
                 </Link>
               ) : null}
-              <img style={{ marginTop: "20px" }} src={classImg} />
-              <div className="workout-info">
-                <div style={{ marginRight: "auto" }}>
-                  <IconFire style={svgSize} />
-                  489
-                  <IconClock style={svgSize} />
-                  49
+              <div
+                style={{
+                  width: "80%",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center"
+                }}
+              >
+                <img
+                  style={{ marginTop: "20px", width: "100%" }}
+                  src={classImg}
+                />
+                <div className="workout-info">
+                  {context.email === "" ? (
+                    <React.Fragment>
+                      <div style={{ justifyContent: "space-between" }}>
+                        <IconFire style={svgSize} />
+                        --
+                        <IconClock style={svgSize} />
+                        49
+                      </div>
+                      <p>
+                        <span className="text--teal">Sign up</span> to calculate
+                        your personal calorie burn
+                      </p>
+                    </React.Fragment>
+                  ) : (
+                    <div style={{ marginRight: "auto" }}>
+                      <IconFire style={svgSize} />
+                      489
+                      <IconClock style={svgSize} />
+                      49
+                    </div>
+                  )}
+                  <button
+                    className="btn btn-teal"
+                    onClick={() => this.props.history.push("/player")}
+                  >
+                    Start
+                  </button>
                 </div>
-                <button
-                  className="btn btn-teal"
-                  onClick={() => this.props.history.push("/player")}
-                >
-                  Start
-                </button>
               </div>
             </div>
           )}

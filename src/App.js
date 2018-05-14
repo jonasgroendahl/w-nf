@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Badge from "./components/Badge/Badge";
 import Nav from "./components/Nav/Nav";
 import Router from "./components/Router/Router";
 import { UserProvider } from "./context/UserContext";

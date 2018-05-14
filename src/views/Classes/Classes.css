@@ -54,3 +54,7 @@
 .slide-item:focus {
   outline: none;
 }
+
+.search-bar {
+  position: relative;
+}
