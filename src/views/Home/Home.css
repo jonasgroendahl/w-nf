@@ -10,6 +10,66 @@
   align-items: flex-start;
 }
 
+.home-bg-2 {
+  height: 100vh;
+  background: url("../../assets/home-3.png") no-repeat center;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+}
+
 .home-bg .badge-container {
   color: white;
+}
+
+.home-top-loggedin {
+  background: black;
+  color: white;
+  display: flex;
+  padding: 0 25px;
+  align-items: center;
+}
+
+.home-bottom-loggedin {
+  padding: 0 25px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.slide-item-home:focus {
+  outline: none;
+}
+
+.slide-item-home > *:first-child {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-slider .slick-next {
+  right: 0;
+  display: none !important;
+}
+
+.featured-div {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.featured-div > div:first-child > * {
+  margin: 0 5px;
+}
+
+.home-slider-bottom {
+  padding: 0 25px;
+}
+
+.home-mid-not-loggedin {
+  background: black;
+  color: white;
+  padding: 25px;
+  display: flex;
+  align-items: center;
 }
